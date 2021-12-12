@@ -136,9 +136,78 @@ a {
     align-items: center;
 }
 
+
+/* --------------------image slider-------------------- */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    margin: 0;
+    /* padding-right: 10px; */
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.next {
+    cursor: pointer;
+    width: auto;
+    color: #FEFEFE;
+    font-weight: bold;
+    font-size: 24px;
+    /* transition: 0.6s ease; */
+    user-select: none;
+}
+
+.next:hover {
+    font-size: 20px;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* @-webkit-keyframes fade {
+    from {
+        left: 0;
+        opacity: .4
+    }
+    to {
+        left: 100px;
+        opacity: 1
+    }
+} */
+
+
+/* @keyframes fade {
+    from {
+        left: 0;
+        opacity: .4
+    }
+    to {
+        left: 100px;
+        opacity: 1
+    }
+} */
+
 .album_version {
     width: 18%;
-    /* margin: 0 10px; */
 }
 
 .version {
@@ -239,6 +308,7 @@ a {
     border-bottom: 1px solid #FEFEFE;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .track_link {
@@ -246,6 +316,26 @@ a {
     font-size: 14px;
     color: #FEFEFE;
     margin-right: 240px;
+}
+
+.play {
+    cursor: pointer;
+}
+
+
+/* .play:active .pause {
+    display: block;
+}
+
+.play:active {
+    display: none;
+} */
+
+.pause {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0;
 }
 
 .footer {

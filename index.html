@@ -40,7 +40,22 @@
             <img class="news_img" src="./image/news_img.png">
         </div>
         <div class="album_section">
-            <img class="version_img" src="./image/Cinnamon_cover.png">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./image/Cinnamon_cover.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./image/honey_cover.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./image/mint_cover.png" style="width:100%">
+                </div>
+            </div>
+            <!-- <img class="version_img" src="./image/Cinnamon_cover.png"> -->
             <div class="album_version">
                 <div class="theme">ALBUM VERSION</div>
                 <div class="version">
@@ -53,7 +68,8 @@
                 </div>
             </div>
             <div class="arrow_container">
-                <img class="arrow_right" src="./image/keyboard_arrow_right.png">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- <img class="arrow_right" src="./image/keyboard_arrow_right.png"> -->
             </div>
             <div class="about_album">
                 <div class="theme">ABOUT ALBUM</div>
@@ -75,25 +91,25 @@
                     </ul>
                     <ul class="track_list">
                         <li class="track_item">
-                            3:47<img class="play" src="./image/play.png">
+                            3:47<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            2:55<img class="play" src="./image/play.png">
+                            2:55<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            3:27<img class="play" src="./image/play.png">
+                            3:27<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            3:20<img class="play" src="./image/play.png">
+                            3:20<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            3:29<img class="play" src="./image/play.png">
+                            3:29<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            3:25<img class="play" src="./image/play.png">
+                            3:25<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                         <li class="track_item">
-                            3:26<img class="play" src="./image/play.png">
+                            3:26<img class="play" src="./image/play.png"><img class="pause" src="./image/pause.png">
                         </li>
                     </ul>
                 </div>
@@ -110,7 +126,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="./js/script.js"></script>
     <script src="./js/jQuery.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
