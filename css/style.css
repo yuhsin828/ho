@@ -21,8 +21,8 @@ body {
     background-image: url("../image/background.png");
     background-position: center top;
     background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-attachment: scroll;
     padding: 0;
     margin: 0;
 }
@@ -196,4 +196,40 @@ a {
     padding: 40px 80px;
     width: 36%;
     height: 100%;
+}
+
+.tracklist_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(177, 177, 177, 0.46);
+    background-blend-mode: color-burn;
+    padding: 50px 260px;
+}
+
+.track {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.track_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track_item {
+    padding: 10px;
+    height: 45px;
+    border-bottom: 1px solid #FEFEFE;
+    display: flex;
+    align-items: center;
+}
+
+.track_link {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #FEFEFE;
+    margin-right: 240px;
 }
