@@ -17,7 +17,6 @@ body {
 
 .my_container {
     width: 100%;
-    /* height: 100vh; */
     background-image: url("../image/background.png");
     background-position: center top;
     background-size: 100%;
@@ -32,11 +31,13 @@ a {
     text-decoration: none;
 }
 
+
+/* --------------------banner&nav-------------------- */
+
 .banner_img {
     width: 100%;
     padding: 0;
     margin: 0;
-    /* position: relative; */
 }
 
 .nav {
@@ -60,7 +61,6 @@ a {
 
 .nav_item {
     margin-left: 40px;
-    /* margin-right: 10px; */
 }
 
 .nav_link {
@@ -76,13 +76,16 @@ a {
     font-weight: 900;
 }
 
+
+/* --------------------news_sectio-------------------- */
+
 .news_section {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 20px;
-    margin: 0 180px;
+    margin: 0 180px 20px 180px;
     padding: 40px 80px;
     display: flex;
     justify-content: space-between;
@@ -130,6 +133,9 @@ a {
     height: 100%;
 }
 
+
+/* --------------------album_section-------------------- */
+
 .album_section {
     display: flex;
     justify-content: space-between;
@@ -137,26 +143,16 @@ a {
 }
 
 
-/* --------------------image slider-------------------- */
-
-
-/* Slideshow container */
+/* -----image slider----- */
 
 .slideshow-container {
     position: relative;
     margin: 0;
-    /* padding-right: 10px; */
 }
-
-
-/* Hide the images by default */
 
 .mySlides {
     display: none;
 }
-
-
-/* Next & previous buttons */
 
 .next {
     cursor: pointer;
@@ -164,7 +160,6 @@ a {
     color: #FEFEFE;
     font-weight: bold;
     font-size: 24px;
-    /* transition: 0.6s ease; */
     user-select: none;
 }
 
@@ -177,34 +172,33 @@ a {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 
 /* @-webkit-keyframes fade {
     from {
-        left: 0;
+        left: -100%;
         opacity: .4
     }
     to {
-        left: 100px;
+        left: 100%;
         opacity: 1
     }
 } */
 
-
-/* @keyframes fade {
+@keyframes fade {
     from {
-        left: 0;
-        opacity: .4
+        opacity: .4;
+        transform: translateX(-100%);
     }
     to {
-        left: 100px;
-        opacity: 1
+        opacity: 1;
+        transform: translateX(0%);
     }
-} */
+}
 
 .album_version {
     width: 18%;
@@ -281,6 +275,9 @@ a {
     height: 100%;
 }
 
+
+/* --------------------tracklist_section-------------------- */
+
 .tracklist_section {
     display: flex;
     justify-content: space-between;
@@ -288,6 +285,10 @@ a {
     background: rgba(177, 177, 177, 0.46);
     background-blend-mode: color-burn;
     padding: 40px 260px;
+}
+
+.tracklist_left {
+    width: 50%;
 }
 
 .track {
@@ -315,21 +316,21 @@ a {
     font-family: Poppins;
     font-size: 14px;
     color: #FEFEFE;
-    margin-right: 240px;
+    margin-right: auto;
+}
+
+.track_time {
+    padding: 10px;
+    height: 45px;
+    border-bottom: 1px solid #FEFEFE;
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
 }
 
 .play {
     cursor: pointer;
 }
-
-
-/* .play:active .pause {
-    display: block;
-}
-
-.play:active {
-    display: none;
-} */
 
 .pause {
     cursor: pointer;
@@ -338,11 +339,16 @@ a {
     right: 0;
 }
 
+
+/* --------------------footer-------------------- */
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 180px;
+    background: linear-gradient(180deg, rgba(58, 58, 58, 0.5) 0%, rgba(13, 13, 13, 0.109375) 78.12%, rgba(0, 0, 0, 0) 100%);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
 
 .footer_title {
