@@ -60,15 +60,20 @@ a {
 
 .nav_item {
     margin-left: 40px;
+    /* margin-right: 10px; */
 }
 
 .nav_link {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     color: rgba(254, 254, 254, 0.8);
+    width: 150px;
+}
+
+.nav_link:hover {
+    font-weight: 900;
 }
 
 .news_section {
@@ -101,29 +106,22 @@ a {
 
 .theme {
     font-family: Poppins;
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-    color: #FEFEFE;
 }
 
 .news_title {
     font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    color: #FEFEFE;
 }
 
 .info {
     font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-    color: #FEFEFE;
     margin-top: 20px;
 }
 
@@ -162,15 +160,13 @@ a {
 .version_link {
     font-family: Poppins;
     font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    color: #FFFFFF;
+    color: #FEFEFE;
 }
 
 .more_btn {
     font-family: Poppins;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #FEFEFE;
     padding: 10px;
     width: 36%;
     text-align: center;
@@ -180,10 +176,28 @@ a {
     border-radius: 100px;
 }
 
+.more_btn:hover {
+    background-color: #FEFEFE;
+    color: #028dcf;
+}
 
-/* .arrow_right {
-    margin-right: 10px;
-} */
+.more_btn:active {
+    background-color: #FEFEFE;
+    color: #028dcf;
+}
+
+.arrow_container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow_right:hover {
+    width: 15px;
+    cursor: pointer;
+}
 
 .about_album {
     background: rgba(255, 255, 255, 0.05);
@@ -204,7 +218,7 @@ a {
     align-items: center;
     background: rgba(177, 177, 177, 0.46);
     background-blend-mode: color-burn;
-    padding: 50px 260px;
+    padding: 40px 260px;
 }
 
 .track {
@@ -232,4 +246,27 @@ a {
     font-size: 14px;
     color: #FEFEFE;
     margin-right: 240px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 180px;
+}
+
+.footer_title {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 40px;
 }
